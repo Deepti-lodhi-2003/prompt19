@@ -1,0 +1,186 @@
+
+body{
+    
+    background-image: linear-gradient( #000000, #0f223c);
+   
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 10px 20px;
+    /* border-bottom: 1px solid gray; */
+    position: relative;
+   
+}
+header .logo img {
+    width:6.5vw;
+}
+header nav {
+    display: flex;
+    gap: 45px;
+}
+header nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 5px 25px;
+   transition: all 0.7s;
+   box-shadow: 1px 1px 2px rgb(184, 104, 81), inset 1px 1px 2px rgb(180, 172, 81) ;
+
+}
+header .menu-icon {
+   visibility: hidden;
+}
+header .right-button {
+    display: flex;
+    gap: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    align-items: center;
+    order: 2;
+}
+
+.right-button button{
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    color: #fcfbf9;
+    font-weight: 600;
+    transition: all 0.3s;
+    background-color: #000000;
+    box-shadow: 1px 1px 2px rgb(184, 104, 81), inset 1px 1px 2px rgb(180, 172, 81) ;
+}
+.right-button button:hover{
+scale: 1.08;
+transition: all 0.3s;
+}
+.active{
+    color: rgb(0, 255, 0);
+}
+header nav a:hover{
+    color: rgb(0, 255, 0);
+   scale: 1.15;
+   transition: all 0.7s;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:2%;
+    color: white;
+}
+.top-btn1{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin: 10px;
+    background-color:#000000fc ;
+    border: none;
+    color: rgb(251, 248, 248);
+    font-weight: 600;
+    box-shadow: 2px 2px 2px rgb(1, 83, 247), inset 1px 1px 2px rgb(0, 255, 225) ;
+    
+}
+.top-btn2{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color:#fff;
+    border: none;
+    color: black;
+    box-shadow: 2px 2px 2px rgb(1, 83, 247), inset 1px 1px 2px rgb(0, 255, 225) ;
+
+}
+.top-btn2 i{
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    margin-left: 10px;
+    border: none;
+}
+.top h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1%;
+    font-family: Ubuntu, sans-serif;
+}
+.top p{
+    font-size:1.3rem;
+    text-align: center;
+    margin-top:-20px;
+    font-family: Ubuntu, sans-serif;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 50px 30px;
+}
+.bottom img{
+  border-radius: 100px;
+  transition: 0.4s;
+
+}
+.bottom img:hover{
+  box-shadow: 1px 1px 5px rgb(0, 0, 0), inset 2px 2px 10px rgb(0, 0, 0) ;
+
+    transform: scale(1.09);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: linear-gradient(to right, #201f1f, #132b4b);
+    }
+
+    header .logo img {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+    }
+    header nav {
+            display: none;
+        }
+
+        header .menu-icon {
+            visibility: visible;
+            font-size: 2rem;
+            position: absolute;
+            right:20px;
+           
+         }
+    header .right-button {
+   visibility: hidden;
+    }
+
+.bottom{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin: 40px;
+    justify-content: space-around; 
+}
+.bottom img{
+    border-radius: 25px;
+}
+
+.top-btn2{
+    margin-top: 10px;
+font-size: 14px;
+}
+.top h1{
+    font-size: 25px;
+   
+}
+.top p{
+    margin-top: 10px;
+    font-size: 15px;  
+}
+}
